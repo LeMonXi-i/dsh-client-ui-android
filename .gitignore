@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# npm
+*.tgz
+npm-debug.log*
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# build artifacts (this plugin ships plain JS — no build step)
+lib/*.map

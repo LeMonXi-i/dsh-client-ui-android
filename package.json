@@ -1,0 +1,63 @@
+{
+  "name": "dsh-client-ui-android",
+  "version": "0.1.0",
+  "description": "Android/mobile adaptation for the DeepSeek Harness web GUI: UA-based Android detection plus a touch-first mobile layout (off-canvas sidebar drawer, full-screen settings, single-line composer toolbar, safe-area insets)",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "web",
+    "android",
+    "mobile",
+    "responsive",
+    "touch",
+    "plugin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-username>/dsh-client-ui-android.git"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/index.d.ts",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "docs"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-client-runtime": ">=0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-ui-layout": ">=0.1.0-rc.5",
+    "react": "^18.2.0"
+  }
+}

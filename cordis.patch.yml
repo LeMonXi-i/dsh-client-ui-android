@@ -1,0 +1,11 @@
+# dsh-client-ui-android bundle patch.
+
+# Inserts the plugin row into the web profile. The adaptation lives entirely
+# in the browser half (lib/client.js); the node half is a minimal loader
+# entry so the client-modules scanner can serve the bundle to the page
+# (window.__DSH_BOOT__ roster + /plugins/<id>/client.js route).
+
+- insert:
+    - id: client-ui-android
+      name: 'dsh-client-ui-android'
+      inject: []
