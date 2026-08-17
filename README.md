@@ -75,7 +75,7 @@ dsh plugin --profile web add dsh-client-ui-android
 ### Option B — from GitHub
 
 ```sh
-dsh plugin --profile web add github:<your-username>/dsh-client-ui-android
+dsh plugin --profile web add github:LeMonXi-i/dsh-client-ui-android
 ```
 
 ### Option C — manual (no pnpm)

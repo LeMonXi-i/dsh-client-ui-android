@@ -68,7 +68,7 @@ dsh plugin --profile web add dsh-client-ui-android
 ### 方式 B — GitHub
 
 ```sh
-dsh plugin --profile web add github:<你的用户名>/dsh-client-ui-android
+dsh plugin --profile web add github:LeMonXi-i/dsh-client-ui-android
 ```
 
 ### 方式 C — 手动（无需 pnpm）

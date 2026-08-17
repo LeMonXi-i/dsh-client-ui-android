@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-username>/dsh-client-ui-android.git"
+    "url": "git+https://github.com/LeMonXi-i/dsh-client-ui-android.git"
   },
   "type": "module",
   "main": "lib/index.js",
